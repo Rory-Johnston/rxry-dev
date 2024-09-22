@@ -3,21 +3,28 @@
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Brick Detective",
     description:
       "A personal portfolio website to showcase my projects, skills, and experiences. Built with React and Tailwind CSS for a modern and responsive design.",
-    techStack: ["React", "Tailwind CSS", "JavaScript", "Vercel"],
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Vercel",
+      "Node.js",
+      "MongoDB",
+    ],
     githubLink: "https://github.com/yourusername/portfolio-website",
     demoLink: "https://yourportfolio.com",
     images: [
-      "/images/portfolio1.png",
-      "/images/portfolio2.png",
-      "/images/portfolio3.png",
+      "/images/brickdetective-one.png",
+      "/images/brickdetective-two.png",
+      "/images/brickdetective-three.png",
     ],
   },
   {
     id: 2,
-    title: "E-commerce Platform",
+    title: "Forze Football",
     description:
       "A full-featured e-commerce platform with user authentication, product listings, shopping cart, and payment integration using Stripe.",
     techStack: ["Next.js", "Tailwind CSS", "Node.js", "Stripe"],
