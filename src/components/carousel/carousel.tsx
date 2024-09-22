@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const ImageCarousel = ({ images }) => {
+const ImageCarousel = ({ images }: any) => {
   const [current, setCurrent] = useState(0);
   const length = images.length;
 
@@ -18,8 +18,7 @@ const ImageCarousel = ({ images }) => {
   }
 
   return (
-    <div className="relative w-full h-64 sm:h-80 md:h-96">
-      {/* Left Arrow */}
+    <div className="relative w-full h-100">
       <div
         className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer z-10"
         onClick={prevSlide}
@@ -27,7 +26,6 @@ const ImageCarousel = ({ images }) => {
         <FaChevronLeft size={30} />
       </div>
 
-      {/* Right Arrow */}
       <div
         className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer z-10"
         onClick={nextSlide}
@@ -39,7 +37,7 @@ const ImageCarousel = ({ images }) => {
         <div
           className={
             index === current
-              ? "opacity-100 transition-opacity duration-500 ease-in-out"
+              ? "opacity-100 transition-opacity duration-500 ease-in-out h-full w-full"
               : "opacity-0 transition-opacity duration-500 ease-in-out"
           }
           key={index}
@@ -48,13 +46,12 @@ const ImageCarousel = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-fit rounded-lg"
             />
           )}
         </div>
       ))}
 
-      {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <span
