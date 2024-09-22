@@ -1,4 +1,4 @@
-import { BackgroundBeams } from "../Background/Background";
+import { BackgroundBeams } from "../background/background";
 
 const Header = () => {
   return (
