@@ -16,9 +16,15 @@ import {
   SiDocker,
   SiAmazon,
   SiVercel,
+  SiSupabase,
+  SiSelenium,
+  SiStripe,
+  SiMapbox,
+  SiHeroku,
+  SiNextdotjs,
 } from "react-icons/si";
 
-import { FaNodeJs, FaPython } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaPython } from "react-icons/fa";
 
 const techIcons = {
   React: SiReact,
@@ -40,6 +46,13 @@ const techIcons = {
   Docker: SiDocker,
   AWS: SiAmazon,
   Vercel: SiVercel,
+  Supabase: SiSupabase,
+  Selenium: SiSelenium,
+  Stripe: SiStripe,
+  Mapbox: SiMapbox,
+  Heroku: SiHeroku,
+  "Next.js": SiNextdotjs,
+  Java: FaJava,
 };
 
 export default techIcons;
