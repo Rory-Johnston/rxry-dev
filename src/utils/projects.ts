@@ -23,6 +23,7 @@ const projects = [
       "Supabase",
       "Selenium",
       "Heroku",
+      "Docker",
     ],
     headerImage: "/images/brickdetective-one.png",
     galleryImages: [

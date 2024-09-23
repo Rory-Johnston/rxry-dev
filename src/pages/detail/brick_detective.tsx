@@ -27,6 +27,7 @@ const BrickDetective = () => {
       "Supabase",
       "Selenium",
       "Heroku",
+      "Docker",
     ],
     headerImage: "/images/brickdetective-one.png",
     galleryImages: [
