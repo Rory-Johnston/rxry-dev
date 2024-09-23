@@ -107,7 +107,7 @@ const projects = [
         <li>Feature Three</li>
       </ul>
     `,
-    techStack: ["Node.js", "Express", "Jest", "TypeScript"],
+    techStack: ["Node.js", "Express", "Jest", "TypeScript", "Docker"],
     headerImage: "/images/boilerplate-one.png",
     galleryImages: ["/images/boilerplate-one.png"],
     liveDemoLink: "https://example.com/live-demo",

@@ -18,7 +18,7 @@ const Boilerplate = () => {
         <li>Feature Three</li>
       </ul>
     `,
-    techStack: ["Node.js", "Express", "Jest", "TypeScript"],
+    techStack: ["Node.js", "Express", "Jest", "TypeScript", "Docker"],
     headerImage: "/images/boilerplate-one.png",
     galleryImages: ["/images/boilerplate-one.png"],
     liveDemoLink: "https://example.com/live-demo",
@@ -30,7 +30,7 @@ const Boilerplate = () => {
         <BackgroundBeams />
       </div>
 
-      <div className="relative top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-gradient-to-r from-blue-800 via-purple-500 to-yellow-500 rounded-b-3xl h-[60vh] flex justify-center items-center z-10">
+      <div className="relative top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-gradient-to-r from-gray-800 via-green-300 to-neutral-500 rounded-b-3xl h-[60vh] flex justify-center items-center z-10">
         <div className="font-bold text-5xl text-white text-center">
           BOILERPLATE
         </div>
