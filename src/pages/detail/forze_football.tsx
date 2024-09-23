@@ -43,7 +43,14 @@ const ForzeFootball = () => {
       </div>
 
       <div className="relative z-20 text-white left-1/2 -translate-x-1/2 max-w-4xl px-4 md:px-0 py-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">FORZE FOOTBALL</h2>
+        <div className="flex items-center gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            FORZE FOOTBALL{" "}
+          </h2>
+          <p className="text-xs bg-green-400 p-1 rounded-md mb-4 font-bold">
+            RELEASED
+          </p>
+        </div>
         <hr className="border-gray-700 mb-6" />
 
         <div className="flex flex-col md:flex-row py-4 gap-8">
