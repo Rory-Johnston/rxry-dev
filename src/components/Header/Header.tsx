@@ -8,7 +8,7 @@ const Header = () => {
           Rory Johnston
         </p>
         <div className="text-7xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 leading-relaxed px-2 text-center">
-          Full-stack engineer
+          Full-stack Engineer
         </div>
         <p></p>
         <div className="flex justify-center items-center relative z-10 gap-5">
