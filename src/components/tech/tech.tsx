@@ -1,6 +1,6 @@
 import techIcons from "../../utils/techs";
 
-const TechIcon = ({ tech }) => {
+const TechIcon = ({ tech }: any) => {
   const IconComponent = techIcons[tech];
   return (
     <div className="flex flex-col items-center">

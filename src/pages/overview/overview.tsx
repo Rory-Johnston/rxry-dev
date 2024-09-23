@@ -1,17 +1,15 @@
-// src/pages/ProjectsOverview.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "../../utils/projects";
 import { BackgroundBeams } from "../../components/background/background";
 import TechIcon from "../../components/tech/tech";
-import { FaArrowRight } from "react-icons/fa"; // Import arrow icon
+import { FaArrowRight } from "react-icons/fa";
 
 const ProjectsOverview = () => {
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState<any>(null);
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* Left Side: Hover Preview - Hidden on Mobile */}
       <div className="md:flex-1 bg-black flex items-center justify-center relative z-10">
         {hoveredProject ? (
           <div className="flex flex-col">
@@ -28,9 +26,11 @@ const ProjectsOverview = () => {
                       Technologies Used
                     </h2>
                     <div className="flex flex-wrap gap-4 justify-center">
-                      {hoveredProject.techStack.map((tech, index) => (
-                        <TechIcon key={index} tech={tech} />
-                      ))}
+                      {hoveredProject.techStack.map(
+                        (tech: any, index: number) => (
+                          <TechIcon key={index} tech={tech} />
+                        )
+                      )}
                     </div>
                   </div>
                 )}
@@ -38,13 +38,12 @@ const ProjectsOverview = () => {
           </div>
         ) : (
           <div className="text-white text-xl md:block hidden">
-            Hover over a project to preview
+            Hover over a project to preview, click to see more.
           </div>
         )}
         <BackgroundBeams />
       </div>
 
-      {/* Right Side: Projects List */}
       <div className="w-full md:w-1/3 bg-neutral-900 text-white p-6 flex flex-col justify-between h-screen">
         <div>
           <h1 className="text-4xl font-bold mb-8">PROJECTS</h1>
@@ -60,7 +59,7 @@ const ProjectsOverview = () => {
                   <span>{project.name}</span>
                   <FaArrowRight
                     className="opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                    aria-hidden="true" // Hide from screen readers
+                    aria-hidden="true"
                   />
                 </Link>
               </li>
@@ -68,7 +67,6 @@ const ProjectsOverview = () => {
           </ul>
         </div>
 
-        {/* Return Button */}
         <Link
           to="/"
           className="w-full h-[10%] rounded-lg text-white font-bold flex justify-center items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold hover:scale-105 hover:cursor-pointer transition-transform duration-300 mt-auto"

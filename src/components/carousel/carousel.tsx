@@ -1,17 +1,7 @@
 import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ImageCarousel = ({ images }: any) => {
   const [current, setCurrent] = useState(0);
-  const length = images.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
 
   if (!Array.isArray(images) || images.length === 0) {
     return null;
@@ -19,20 +9,6 @@ const ImageCarousel = ({ images }: any) => {
 
   return (
     <div className="relative w-full h-100 rounded-xl">
-      {/* <div
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer z-10"
-        onClick={prevSlide}
-      >
-        <FaChevronLeft size={30} />
-      </div>
-
-      <div
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer z-10"
-        onClick={nextSlide}
-      >
-        <FaChevronRight size={30} />
-      </div> */}
-
       {images.map((image, index) => (
         <div
           className={

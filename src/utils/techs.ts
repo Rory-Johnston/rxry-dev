@@ -28,7 +28,7 @@ import {
 
 import { FaJava, FaNodeJs, FaPython } from "react-icons/fa";
 
-const techIcons = {
+const techIcons: any = {
   React: SiReact,
   Firebase: SiFirebase,
   MongoDB: SiMongodb,
