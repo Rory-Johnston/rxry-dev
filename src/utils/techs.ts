@@ -23,6 +23,7 @@ import {
   SiHeroku,
   SiNextdotjs,
   SiOvh,
+  SiJest,
 } from "react-icons/si";
 
 import { FaJava, FaNodeJs, FaPython } from "react-icons/fa";
@@ -55,6 +56,7 @@ const techIcons = {
   "Next.js": SiNextdotjs,
   Java: FaJava,
   OVH: SiOvh,
+  Jest: SiJest,
 };
 
 export default techIcons;
