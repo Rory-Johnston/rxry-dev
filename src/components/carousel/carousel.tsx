@@ -18,8 +18,8 @@ const ImageCarousel = ({ images }: any) => {
   }
 
   return (
-    <div className="relative w-full h-100">
-      <div
+    <div className="relative w-full h-100 rounded-xl">
+      {/* <div
         className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer z-10"
         onClick={prevSlide}
       >
@@ -31,7 +31,7 @@ const ImageCarousel = ({ images }: any) => {
         onClick={nextSlide}
       >
         <FaChevronRight size={30} />
-      </div>
+      </div> */}
 
       {images.map((image, index) => (
         <div
@@ -58,8 +58,8 @@ const ImageCarousel = ({ images }: any) => {
             key={index}
             className={
               index === current
-                ? "block w-3 h-3 bg-white rounded-full"
-                : "block w-3 h-3 bg-gray-400 rounded-full"
+                ? "block w-3 h-3 bg-white rounded-full hover:cursor-pointer"
+                : "block w-3 h-3 bg-gray-400 rounded-full hover:cursor-pointer"
             }
             onClick={() => setCurrent(index)}
           ></span>
