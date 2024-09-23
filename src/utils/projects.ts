@@ -16,6 +16,7 @@ const projects = [
     techStack: [
       "React",
       "Node.js",
+      "Express",
       "Tailwind CSS",
       "Vercel",
       "MongoDB",
@@ -61,7 +62,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "SmashBlade",
+    name: "Smashblade",
     slug: "smashblade",
     tagline: "An innovative solution to modern problems.",
     description: `
@@ -73,7 +74,17 @@ const projects = [
         <li>Feature Three</li>
       </ul>
     `,
-    techStack: ["React", "Next.js", "Tailwind CSS", "Vercel", "Java"],
+    techStack: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel",
+      "Java",
+      "Node.js",
+      "Heroku",
+      "Express",
+      "OVH",
+    ],
     headerImage: "/images/smashblade-one.png",
     galleryImages: [
       "/images/brickdetective-two.png",
