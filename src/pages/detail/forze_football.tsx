@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BackgroundBeams } from "../../components/background/background";
 import TechIcon from "../../components/tech/tech";
 
@@ -91,6 +92,14 @@ const ForzeFootball = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center py-4">
+        <Link
+          to="/projects"
+          className="w-[20%] h-[10%] py-4 rounded-lg text-white font-bold flex justify-center items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold hover:scale-105 hover:cursor-pointer transition-transform duration-300 mt-auto z-10 relative"
+        >
+          Return to projects
+        </Link>
       </div>
     </div>
   );
