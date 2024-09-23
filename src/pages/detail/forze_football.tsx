@@ -36,7 +36,7 @@ const ForzeFootball = () => {
         <BackgroundBeams />
       </div>
 
-      <div className="relative top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-gradient-to-r from-gray-500 via-yellow-500 to-black-500 rounded-b-3xl h-[60vh] flex justify-center items-center z-10">
+      <div className="relative top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl bg-gradient-to-r from-yellow-500 via-yellow-700 to-black rounded-b-3xl h-[60vh] flex justify-center items-center z-10">
         <div className="font-bold text-5xl text-white text-center">
           FORZE FOOTBALL
         </div>
