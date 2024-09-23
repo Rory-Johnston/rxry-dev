@@ -9,20 +9,20 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   return (
-    <div className="min-h-screen bg-black text-white py-16 px-4">
+    <div className="min-h-screen bg-neutral-900 text-white py-10 px-4">
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="bg-neutral-800 rounded-xl shadow-lg p-6 flex flex-col md:flex-row">
+        <div className="bg-neutral-900 rounded-xl p-6 flex flex-col md:flex-row">
           <section className="md:w-3/4 md:pr-6">
             <ImageCarousel images={selectedProject.images} />
             <div className="mt-6">
-              <h2 className="text-3xl font-semibold mb-4">
+              <h2 className="text-white text-3xl font-bold relative z-10 mb-4">
                 {selectedProject.title}
               </h2>
               <p className="text-gray-300">{selectedProject.description}</p>
             </div>
 
             <div className="mt-6">
-              <ul className="flex flex-wrap gap-4">
+              <ul className="flex flex-wrap gap-2">
                 {selectedProject.techStack.map((tech, index) => {
                   const IconComponent = techIcons[tech];
                   if (!IconComponent) {
@@ -31,12 +31,12 @@ const Projects = () => {
                   return (
                     <li
                       key={index}
-                      className="flex items-center space-x-2"
+                      className="flex items-center space-x-2 bg-black rounded-lg px-4 py-2"
                       title={tech}
                     >
                       {IconComponent ? (
                         <IconComponent
-                          size={24}
+                          size={18}
                           className="text-white"
                           aria-label={tech}
                         />
@@ -57,7 +57,7 @@ const Projects = () => {
                   href={selectedProject.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center px-4 py-2 bg-black rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                  className="flex items-center px-6 py-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
                   aria-label="GitHub Repository"
                 >
                   <FaGithub className="mr-2" /> GitHub
@@ -68,7 +68,7 @@ const Projects = () => {
                   href={selectedProject.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center px-4 py-2 bg-black rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                  className="flex items-center px-6 py-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
                   aria-label="Live Demo"
                 >
                   <FaExternalLinkAlt className="mr-2" /> Live Demo
@@ -84,9 +84,9 @@ const Projects = () => {
                 <li
                   key={project.id}
                   onClick={() => setSelectedProject(project)}
-                  className={`cursor-pointer mb-2 px-3 py-2 rounded-lg transition-colors duration-300 flex items-center ${
+                  className={`cursor-pointer mb-2 px-3 py-2 rounded-lg text-md transition-colors duration-300 flex items-center ${
                     selectedProject.id === project.id
-                      ? "bg-black text-white"
+                      ? "py-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg"
                       : "text-gray-300 hover:bg-neutral-700 hover:text-white"
                   }`}
                   tabIndex={0}
