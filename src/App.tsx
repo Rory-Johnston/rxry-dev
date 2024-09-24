@@ -5,12 +5,14 @@ import BrickDetective from "./pages/detail/brick_detective";
 import ForzeFootball from "./pages/detail/forze_football";
 import Smashblade from "./pages/detail/smashblade";
 import Boilerplate from "./pages/detail/boilerplate";
+import About from "./pages/about/about";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<ProjectsOverview />} />
         <Route path="/projects/brick-detective" element={<BrickDetective />} />
         <Route path="/projects/forze-football" element={<ForzeFootball />} />
