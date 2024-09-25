@@ -37,7 +37,7 @@ const Boilerplate = () => {
       </div>
 
       <div className="relative z-20 text-white left-1/2 -translate-x-1/2 max-w-4xl px-4 md:px-0 py-8">
-        <div className="flex items-center gap-4">
+        <div className="flex-col md:flex items-center gap-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">BOILERPLATE </h2>
           <p className="text-xs bg-green-400 p-1 rounded-md mb-4 font-bold">
             RELEASED
@@ -97,7 +97,7 @@ const Boilerplate = () => {
       <div className="flex justify-center items-center py-4">
         <Link
           to="/projects"
-          className="w-[20%] h-[10%] py-4 rounded-lg text-white font-bold flex justify-center items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold hover:scale-105 hover:cursor-pointer transition-transform duration-300 mt-auto z-10 relative"
+          className="w-[50%] md:w-[50%] h-[10%] py-4 rounded-lg text-white font-bold flex justify-center items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold hover:scale-105 hover:cursor-pointer transition-transform duration-300 mt-auto z-10 relative"
         >
           Return to projects
         </Link>
