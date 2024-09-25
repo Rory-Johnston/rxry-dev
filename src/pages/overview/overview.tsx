@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import projects from "../../utils/projects";
 import { BackgroundBeams } from "../../components/background/background";
@@ -7,6 +7,30 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ProjectsOverview = () => {
   const [hoveredProject, setHoveredProject] = useState<any>(null);
+  const [canHover, setCanHover] = useState<boolean>(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(hover: hover) and (pointer: fine)");
+    setCanHover(mql.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setCanHover(e.matches);
+    };
+
+    if (mql.addEventListener) {
+      mql.addEventListener("change", handleChange);
+    } else {
+      mql.addListener(handleChange);
+    }
+
+    return () => {
+      if (mql.removeEventListener) {
+        mql.removeEventListener("change", handleChange);
+      } else {
+        mql.removeListener(handleChange);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
@@ -52,8 +76,10 @@ const ProjectsOverview = () => {
               <li key={project.id} className="mb-4">
                 <Link
                   to={`/projects/${project.slug}`}
-                  onMouseEnter={() => setHoveredProject(project)}
-                  onMouseLeave={() => setHoveredProject(null)}
+                  {...(canHover && {
+                    onMouseEnter: () => setHoveredProject(project),
+                    onMouseLeave: () => setHoveredProject(null),
+                  })}
                   className="group px-6 py-2 bg-neutral-800 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-between"
                 >
                   <span>{project.name}</span>
