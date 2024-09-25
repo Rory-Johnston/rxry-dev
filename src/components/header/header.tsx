@@ -14,6 +14,7 @@ const Header = () => {
         <div className="flex justify-center items-center relative z-10 gap-5">
           <a
             href="projects"
+            data-umami-event="Projects button"
             className="text-center px-6 py-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
           >
             See my projects
@@ -21,6 +22,7 @@ const Header = () => {
 
           <a
             href="about"
+            data-umami-event="Learn more button"
             className="text-center px-6 py-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
           >
             Learn more

@@ -80,6 +80,7 @@ const ProjectsOverview = () => {
                     onMouseEnter: () => setHoveredProject(project),
                     onMouseLeave: () => setHoveredProject(null),
                   })}
+                  data-umami-event={`${project.name} button`}
                   className="group px-6 py-2 bg-neutral-800 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-between"
                 >
                   <span>{project.name}</span>
