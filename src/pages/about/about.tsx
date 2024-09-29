@@ -8,11 +8,12 @@ const about = () => {
           About me
         </p>
         <div className="text-neutral-300 my-8 text-center">
-          I am a full stack software engineer with ~3 years of industry
-          experience. I'm passionate about software development which is why I
-          start so many different projects (many not taken to completion). I am
-          continuously learning new technologies and techniques to improve my
-          engineering ability.
+          I’m a full-stack software engineer with over 3 years of industry
+          experience. My passion for software development drives me to explore
+          and develop a wide range of projects. While I enjoy experimenting with
+          new technologies, I always aim to bring meaningful projects to
+          fruition. This continuous learning helps me stay at the forefront of
+          industry trends and refine my technical abilities.
         </div>
         <div className="my-4 text-neutral-300 text-center font-bold">
           Email: contact@rxry.dev
