@@ -6,7 +6,7 @@ import TechIcon from "../../components/tech/tech";
 import { FaArrowRight } from "react-icons/fa";
 
 const ProjectsOverview = () => {
-  const [hoveredProject, setHoveredProject] = useState<any>(null);
+  const [hoveredProject, setHoveredProject] = useState<any>(projects[0]);
   const [canHover, setCanHover] = useState<boolean>(false);
 
   useEffect(() => {
@@ -68,12 +68,12 @@ const ProjectsOverview = () => {
         <BackgroundBeams />
       </div>
 
-      <div className="w-full md:w-1/3 bg-neutral-900 text-white p-6 flex flex-col justify-between h-screen">
+      <div className="w-full md:w-1/3 bg-neutral-900 text-white pt-6 flex flex-col justify-between h-screen">
         <div>
-          <h1 className="text-4xl font-bold mb-8">PROJECTS</h1>
+          <h1 className="text-4xl font-bold mb-8 pl-6">PROJECTS</h1>
           <ul>
             {projects.map((project) => (
-              <li key={project.id} className="mb-4">
+              <li key={project.id} className="">
                 <Link
                   to={`/projects/${project.slug}`}
                   {...(canHover && {
@@ -81,7 +81,7 @@ const ProjectsOverview = () => {
                     onMouseLeave: () => setHoveredProject(null),
                   })}
                   data-umami-event={`${project.name} button`}
-                  className="group px-6 py-2 bg-neutral-800 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-between"
+                  className="group h-[80px] px-6 py-2 bg-neutral-800 hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold shadow-md transform transition duration-300 hover:shadow-xl flex items-center justify-between"
                 >
                   <span>{project.name}</span>
                   <FaArrowRight
