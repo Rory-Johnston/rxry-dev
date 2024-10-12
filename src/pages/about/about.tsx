@@ -23,14 +23,25 @@ const about = () => {
             href="projects"
             className="px-6 py-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            See my projects
+            Projects
           </a>
-
+          <a
+            href="https://www.github.com/Rory-Johnston"
+            className="px-6 py-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            Github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rory-johnstxn"
+            className="px-6 py-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            LinkedIn
+          </a>
           <a
             href="/"
             className="px-6 py-2 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            Return
+            Back
           </a>
         </div>
       </div>
