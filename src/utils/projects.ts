@@ -95,7 +95,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "Node Express Boilerplate",
+    name: "Boilerplate",
     slug: "boilerplate",
     tagline: "An innovative solution to modern problems.",
     description: `
